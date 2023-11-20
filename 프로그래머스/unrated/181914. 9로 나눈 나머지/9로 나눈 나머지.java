@@ -6,11 +6,8 @@ class Solution {
             int a = (int)number.charAt(i)-48;
             sum += a;
         }
-        while(true){
-            if(sum<9) break;
-            sum -= 9;
-        }
-        answer = sum;
+        
+        answer = sum%9;
         return answer;
     }
 }
